@@ -23,6 +23,7 @@ class CreateUsersTable extends Migration
             $table->integer('building_id')->nullable();
             $table->string('room_number')->nullable();
             $table->integer('point')->nullable();
+            $table->integer('gender')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
