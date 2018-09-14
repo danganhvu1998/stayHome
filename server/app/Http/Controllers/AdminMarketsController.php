@@ -33,7 +33,7 @@ class adminMarketsController extends Controller
             'market_name' => 'required',
             'market_address' => 'required',
             'market_postal_code' => 'required',
-            'file' => 'required'
+            'file' => 'required|image'
         ]);
         $market = new market;
         $market->name = $request->market_name;
@@ -59,6 +59,7 @@ class adminMarketsController extends Controller
             'market_name' => 'required',
             'market_address' => 'required',
             'market_postal_code' => 'required',
+            'file' => 'image'
         ]);
 
         market::where("id", $request->marketID)

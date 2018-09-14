@@ -33,7 +33,7 @@ class AdminBuildingsController extends Controller
             'building_name' => 'required',
             'building_address' => 'required',
             'building_postal_code' => 'required',
-            'file' => 'required'
+            'file' => 'required|image'
         ]);
         $building = new building;
         $building->name = $request->building_name;
@@ -59,6 +59,7 @@ class AdminBuildingsController extends Controller
             'building_name' => 'required',
             'building_address' => 'required',
             'building_postal_code' => 'required',
+            'file' => 'image'
         ]);
 
         building::where("id", $request->buildingID)

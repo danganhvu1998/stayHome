@@ -19,7 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-// UsersController 
+// Users Controller 
 Route::get('/user/view', 'UsersController@userViewingSite');
 
 Route::get('/user/setting', 'UsersController@userSettingSite');
@@ -31,6 +31,19 @@ Route::post('user/setting/password', 'UsersController@userSettingPasswordChange'
 Route::post('user/setting/image', 'UsersController@userSettingImageChange');
 
 Route::post('user/setting/address', 'UsersController@userSettingAddressChange');
+
+// Goods Controller
+Route::get('/goods/view', 'GoodsController@goodsViewingSite');
+
+Route::post('/goods/buy', 'GoodsController@goodsBuying');
+
+Route::get('/goods/add', 'GoodsController@goodsAddingSite');
+
+Route::post('/goods/add', 'GoodsController@goodsAdding');
+
+Route::get('/goods/edit/{goodsID}', 'GoodsController@goodsEditingSite');
+
+Route::post('/goods/edit', 'GoodsController@goodsEditing');
 
 
 

@@ -2,15 +2,6 @@
 
 @section('content')
     <h3>Add Building</h3>
-    @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif
     {!! Form::open(['action' => 'AdminBuildingsController@addBuilding', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
     <div>
         <span>Name</span>
