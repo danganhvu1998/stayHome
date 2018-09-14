@@ -32,6 +32,8 @@ Route::post('user/setting/image', 'UsersController@userSettingImageChange');
 
 Route::post('user/setting/address', 'UsersController@userSettingAddressChange');
 
+
+
 // ************************** ADMIN SITE ************************** \\
 // ************************** ADMIN SITE ************************** \\
 // ************************** ADMIN SITE ************************** \\
@@ -40,11 +42,28 @@ Route::post('user/setting/address', 'UsersController@userSettingAddressChange');
 // ************************** ADMIN SITE ************************** \\
 // ************************** ADMIN SITE ************************** \\
 
+// Building Controller
 Route::get('/admin/building', 'AdminBuildingsController@allBuildingsSite');
 
 Route::get('/admin/building/add', 'AdminBuildingsController@addBuildingSite');
 
 Route::post('/admin/building/add', 'AdminBuildingsController@addBuilding');
 
+Route::get('/admin/building/edit/{buildingID}', 'AdminBuildingsController@editBuildingSite');
 
+Route::post('/admin/building/edit', 'AdminBuildingsController@editBuilding');
 
+Route::get('/admin/building/delete/{buildingID}', 'AdminBuildingsController@deleteBuilding');
+
+// Market Controller
+Route::get('/admin/market', 'AdminMarketsController@allmarketsSite');
+
+Route::get('/admin/market/add', 'AdminMarketsController@addMarketSite');
+
+Route::post('/admin/market/add', 'AdminMarketsController@addMarket');
+
+Route::get('/admin/market/edit/{marketID}', 'AdminMarketsController@editMarketSite');
+
+Route::post('/admin/market/edit', 'AdminMarketsController@editMarket');
+
+Route::get('/admin/market/delete/{marketID}', 'AdminMarketsController@deleteMarket');

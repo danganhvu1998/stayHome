@@ -49,6 +49,20 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" >
+                                    Market<span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="/admin/market">
+                                        All Markets
+                                    </a>
+                                    <a class="dropdown-item" href="/admin/market/add">
+                                        Add Market
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" >
                                     Building<span class="caret"></span>
                                 </a>
 
@@ -57,7 +71,7 @@
                                         All Buildings
                                     </a>
                                     <a class="dropdown-item" href="/admin/building/add">
-                                        Add Buildings
+                                        Add Building
                                     </a>
                                 </div>
                             </li>
