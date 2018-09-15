@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Storage;
 
 use App\goods;
 use App\market;
+use App\singleRequire;
 
 class GoodsController extends Controller
 {
@@ -35,6 +36,21 @@ class GoodsController extends Controller
         $request->validate([
             'amount' => 'required',
         ]);
+        if($request->amount < 1){
+            return back()->withError('Amount has to be greater than 0')->withInput();
+        } else if($request->amount > 9){
+            return back()->withError('Amount has to be smaller than 10')->withInput();
+        }
+        $singleRequire = new singleRequire;
+        $singleRequire->goodsID = $request->goodsID;
+        $singleRequire->userID = Auth::user()->id;
+        $singleRequire->amount = $request->amount;
+        $singleRequire->status = 0;//unconfirmed
+        $singleRequire->note = $request->note;
+        if(!isset($singleRequire->note)){
+            $singleRequire->note = "";
+        }
+        $singleRequire->save();
         return $request;
     }
 

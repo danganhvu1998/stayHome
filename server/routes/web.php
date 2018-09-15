@@ -43,7 +43,14 @@ Route::post('/goods/add', 'GoodsController@goodsAdding');
 
 Route::get('/goods/edit/{goodsID}', 'GoodsController@goodsEditingSite');
 
-Route::post('/goods/edit', 'GoodsController@goodsEditing');
+Route::post('/goods/edit', 'GoodsController@Auth::user()->point');
+
+// User Require Controller
+Route::get('require/view', 'UserRequiresController@requiresViewingSite');
+
+Route::post('require/confirm', 'UserRequiresController@requireConfirm');
+
+Route::get('require/delete/{singleRequireID}', 'UserRequiresController@requireDelete');
 
 
 
