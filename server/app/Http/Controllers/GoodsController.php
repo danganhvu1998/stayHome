@@ -51,7 +51,7 @@ class GoodsController extends Controller
             $singleRequire->note = "";
         }
         $singleRequire->save();
-        return $request;
+        return redirect("/goods/view");
     }
 
     public function goodsAddingSite(){

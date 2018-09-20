@@ -46,11 +46,13 @@ Route::get('/goods/edit/{goodsID}', 'GoodsController@goodsEditingSite');
 Route::post('/goods/edit', 'GoodsController@Auth::user()->point');
 
 // User Require Controller
-Route::get('require/view', 'UserRequiresController@requiresViewingSite');
+Route::get('user_require/confirm', 'UserRequiresController@userRequireConfirmSite');
 
-Route::post('require/confirm', 'UserRequiresController@requireConfirm');
+Route::get('user_require/delete/{singleRequireID}', 'UserRequiresController@requireDelete');
 
-Route::get('require/delete/{singleRequireID}', 'UserRequiresController@requireDelete');
+Route::get('user_require/goodsConfirm/{singleRequireID}', 'UserRequiresController@requireConfirm');
+
+Route::get('user_require/goodsConfirmAll', 'UserRequiresController@requiresConfirmAll');
 
 
 
