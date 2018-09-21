@@ -56,9 +56,18 @@
                         </div>
                     </div>
                     
-                    <div class="card-footer" align="right">
-                        <div class="btn-group btn-group-justified text-center">
-                            <a href="/user_require/goodsConfirm/{{$confirmedUserRequire->id}}" class="btn btn-sm btn-primary">Confirm</a>
+                    <div class="card-footer row">
+                        <div class="col-md-9">
+                            Status: {{$confirmedUserRequire->status}}
+                            @if ($confirmedUserRequire->status==1)
+                                Pending
+                            @elseif($confirmedUserRequire->status==2)
+                                Buying
+                            @else
+                                Time to take it home!
+                            @endif
+                        </div>
+                        <div class="btn-group col-md-3">
                             <a href="/user_require/delete/{{$confirmedUserRequire->id}}" class="btn btn-sm btn-danger">Remove</a>
                         </div>
                     </div>
