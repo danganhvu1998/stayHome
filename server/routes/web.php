@@ -54,6 +54,15 @@ Route::get('user_require/goodsConfirm/{singleRequireID}', 'UserRequiresControlle
 
 Route::get('user_require/goodsConfirmAll', 'UserRequiresController@requiresConfirmAll');
 
+// Require Taker Controller 
+Route::get('require/all', "RequireTakerController@requireTakerViewingSite");
+
+Route::get('require/add/{requesterID}', "RequireTakerController@requireTakerAdding");
+
+Route::get('require/delete/{requesterID}', "RequireTakerController@requireTakerDeleting");
+
+Route::get('require/finish', "RequireTakerController@requireTakerConfirmFinish");
+
 
 
 // ************************** ADMIN SITE ************************** \\
