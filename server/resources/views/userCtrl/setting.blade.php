@@ -29,6 +29,7 @@
     <hr>
     <hr>
     <h3>ADDRESS SETTING</h3>
+    <p>You have to register building to be able to request or take other request</p>
     @foreach ($buildings as $building)
         <div class="row text-center">
             <div class="col-md-4"><img src="/storage/file/{{$building->image}}" alt="NO IMAGE" width="200"></div>

@@ -28,6 +28,9 @@ class UsersController extends Controller
             ->join('buildings', 'users.building_id', '=', 'buildings.id')
             ->select("users.*", 'buildings.name as building_name', 'buildings.address', 'buildings.postal_code')
             ->first();
+        if($user==null){
+            return redirect("/user/setting");
+        }
         return view("userCtrl.view")->with("user", $user);
     }
 
