@@ -104,6 +104,7 @@
     </div><hr>
 
     <h3>Your stuffs is home!</h3>
+    <span>When you see your orders here, you can come to deliver's room and take it! </span>
     <span class="text-danger">Important: Once you confirmed, it cannot be redone. <strong>PLEASE PLAY FAIR!</strong></span><br>
     <div>
         @foreach ($finishedUserRequires as $require)
