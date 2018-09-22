@@ -22,7 +22,7 @@
 
     <!--Change Image--> <hr>
     {!! Form::open(['action' => 'UsersController@userSettingImageChange', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
-    <span>New Profile Picture</span>
+    <span>New Profile Picture. Try to make it clear enough for everyone what your is your room number</span><br>
     {{Form::file('file')}}
     {{Form::submit('UPLOAD (Maximum 2MB)', ['class' => 'btn btn-outline-primary'])}}
     {!! Form::close() !!}

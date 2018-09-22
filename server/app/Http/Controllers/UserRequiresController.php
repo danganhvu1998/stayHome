@@ -25,7 +25,7 @@ class userRequiresController extends Controller
     public function pointInfoTaker(){
         if(!isset(Auth::user()->point)){
             User::where("id", Auth::user()->id)
-                ->update(["point" => 3]);
+                ->update(["point" => 1000000]);
         }
     }
 

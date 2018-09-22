@@ -6,6 +6,9 @@
     @endif
     
     <p>You have <strong>{{Auth::user()->point}}</strong> point left</p>
+    @if (!isset(Auth::user()->room_number))
+        <a href="/user/setting" class="btn btn-outline-primary">Hey, where is your room? Don't be shy, everyone want to see you!</a>
+    @endif
     <h3>Your buying list</h3>
     <div class="card-columns">
         @foreach ($userRequires as $userRequire)

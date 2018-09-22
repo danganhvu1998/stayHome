@@ -7,7 +7,12 @@
     <div class="card-columns">
         @foreach ($allGoods as $goods)
             <div class="card bg-light">
-                <div class="card-header">{{$goods->id}} - {{$goods->name}}</div>
+                <div class="card-header">
+                    {{$goods->name}}
+                    @if (Auth::user()->id==1)
+                        <a href="/goods/edit/{{$goods->id}}" class="btn btn-primary">Edit</a>
+                    @endif
+                </div>
                 <div class="card-body row">
                     <div class="col-md-5">
                         <img src="/storage/file/{{$goods->image}}" alt="{{$goods->image}}" width="125" height="125">
@@ -28,7 +33,7 @@
                     <div class="form-group">
                         <input type="text" class="mr-sm-2" id="note" name="note" placeholder="Any Note?">
                     </div>
-                    <button type="submit" class="btn btn-outline-primary">BUY</button>
+                    <button type="submit" class="btn btn-outline-primary">Add to list</button>
                     {!! Form::close() !!}
                 </div>
             </div>

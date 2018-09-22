@@ -43,7 +43,7 @@ Route::post('/goods/add', 'GoodsController@goodsAdding');
 
 Route::get('/goods/edit/{goodsID}', 'GoodsController@goodsEditingSite');
 
-Route::post('/goods/edit', 'GoodsController@Auth::user()->point');
+Route::post('/goods/edit', 'GoodsController@goodsEditing');
 
 // User Require Controller
 Route::get('user_require/confirm', 'UserRequiresController@userRequireConfirmSite');

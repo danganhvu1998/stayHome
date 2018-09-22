@@ -7,9 +7,11 @@
     
     <h3>so How To Use</h3>
     <p>First: Register!</p>
-    <p>After that, you still cannot buy or request yet, you have to fill other information like <strong>room number</strong> or <strong>a picture that in front of your door</strong> and you are ready to go!</p>
+    <p>After that, you now can buy and request, <b>but nobody can see it!</b> You have to fill other information like <strong>room number</strong> or <strong>a picture of you that in front of your door</strong> and you are ready to go!</p>
     <p>Now you are in the system. You can find stuffs you want to buy or create a new one(but make sure make it clear enough that everyone can understand)</p>
     <p>If you want to buy more than 5 stuffs, you HAVE TO GO BY YOURSELF, and don't forget to take some others' order with you and gain some points. (Limit amount might change in the future)</p>
+    <p>One point will help you to buy one stuff. 10 points 10 stuffs.</p>
+    <p><b class="text-danger">We just connect people, WE WILL TAKE NO RESPONSE ABOUT MONEY</b></p>
     <p>More features is in developing</p>
     <p>And finally, <strong class="text-danger">DO NOT CHEAT, PLAY FAIR</strong></p>
 @endsection
