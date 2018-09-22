@@ -126,7 +126,7 @@
                         <li>The point you gain in testing time will not lose after that. For example, if you gain <b>10</b> points and use <b>3</b>, you will have extra <b>7</b> points</li>
                         <li>After testing time, first 4 people will have <b>10 + extra point</b>. Other will have <b>3 + extra point</b>. New registers have nothing</li>
                         <li>If you find any bugs, or any ideas to improve SHF, please fell free to inform me at <b class="text-danger">danganhvu1998@gmail.com</b>. Thank you!(Of course, extra point!)</li>
-                        <li>Currently only for Dormy Kawaguchi</li>
+                        <li>Currently only for Dormy Kawaguchi. Why <b class="text-primary">kyatod.science</b>? On Sale!</li>
                         <li>Trouble? Please read: <a href="/docs/eng">English</a> or <a href="/docs/jap">日本語(not yet)</a></li>
                         <li>Trouble with login? Sorry reset password will not work. Email me: <b>danganhvu1998@gmail.com</b></li>
                     </ul>
