@@ -122,7 +122,7 @@
                 <hr>
                 <div class="">
                     <ul>
-                        <li><b class="text-danger">This is 100% free service that connect Buyer and Go-To-Maker-er. Price is only approximate. Final price is on the bill, Buyer and Taker will decide how much money to pay</b></li>
+                        <li><b class="text-danger">This is 100% free service that connect Buyer and Go-To-Market-er. Price is only approximate. Final price is on the bill, Buyer and Taker will decide how much money to pay</b></li>
                         <li>Trouble with login? Sorry reset password will not work. Email me: <b>danganhvu1998@gmail.com</b></li>
                     </ul>
                 </div>
