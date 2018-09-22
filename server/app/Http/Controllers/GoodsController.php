@@ -38,8 +38,8 @@ class GoodsController extends Controller
         ]);
         if($request->amount < 1){
             return back()->withError('Amount has to be greater than 0')->withInput();
-        } else if($request->amount > 9){
-            return back()->withError('Amount has to be smaller than 10')->withInput();
+        } else if($request->amount > 5){
+            return back()->withError('Amount has to be smaller than 6')->withInput();
         }
         $singleRequire = new singleRequire;
         $singleRequire->goodsID = $request->goodsID;

@@ -1,11 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
-    <h3>Your Taken Request</h3>
+    <div class="row">
+        <div class="col-md-10">
+            <h3>Your Taken Request</h3>
+        </div>
+        <div class="col-md-2 text-center">
+            <a href="/require/finish" class="btn btn-lg btn-success">Finished</a>
+        </div>
+    </div><br>
     @foreach ($requesters as $requester)
-        <div class="card">
-            @if (isset($usersTakenRequests[$requester->id]))
-            <div class="card-header">
+        @if (isset($usersTakenRequests[$requester->id]))
+            <div class="card">
+                <div class="card-header">
                     <div class="row text-center">
                         <div class="col-md-4">
                             <img src="/storage/file/{{$requester->image}}" alt="{{$requester->image}}" height="100">
@@ -20,8 +27,8 @@
                             <a href="/require/delete/{{$requester->id}}" class="btn btn-lg btn-danger">Remove This!</a>
                         </div>
                     </div>
-                    
                 </div>
+
                 <div class="card-body">
                     <ul>
                         @foreach ($usersTakenRequests[$requester->id] as $userRequest)
@@ -42,18 +49,17 @@
                         @endforeach
                     </ul>
                 </div>
+            </div>
             @endif
-            
-        </div>
         <br>
     @endforeach
     <hr>
 
     <h3>All Request</h3>
     @foreach ($requesters as $requester)
-        <div class="card">
-            @if (isset($usersRequests[$requester->id]))
-            <div class="card-header">
+        @if (isset($usersRequests[$requester->id]))
+            <div class="card">
+                <div class="card-header">
                     <div class="row text-center">
                         <div class="col-md-4">
                             <img src="/storage/file/{{$requester->image}}" alt="{{$requester->image}}" height="100">
@@ -90,9 +96,8 @@
                         @endforeach
                     </ul>
                 </div>
-            @endif
-            
-        </div>
+            </div>
+        @endif
         <br>
     @endforeach
 @endsection

@@ -18,6 +18,9 @@ class RequireTakerController extends Controller
     }
 
     public function requireTakerViewingSite(){
+        if(!isset(Auth::user()->building_id)){
+            return redirect("/user/setting");
+        }
         $requesters = User::where("building_id", Auth::user()->building_id)->get();
         
         // All Free Request
@@ -63,6 +66,15 @@ class RequireTakerController extends Controller
             ->where("takerID", Auth::user()->id)
             ->update([
                 "status" => 1,
+            ]);
+        return redirect("/require/all");
+    }
+
+    public function requireTakerConfirmFinish(){
+        singleRequire::where("takerID", Auth::user()->id)
+            ->where("status", 2)
+            ->update([
+                "status" => 3
             ]);
         return redirect("/require/all");
     }

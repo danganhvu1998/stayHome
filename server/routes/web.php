@@ -54,6 +54,12 @@ Route::get('user_require/goodsConfirm/{singleRequireID}', 'UserRequiresControlle
 
 Route::get('user_require/goodsConfirmAll', 'UserRequiresController@requiresConfirmAll');
 
+Route::get('user_require/goodsConfirmAll', 'UserRequiresController@requiresConfirmAll');
+
+Route::get('user_require/finish/success/{singleRequireID}', 'UserRequiresController@requiresConfirmFinishedSuccess');
+
+Route::get('user_require/finish/failt/{singleRequireID}', 'UserRequiresController@requiresConfirmFinishedFailt');
+
 // Require Taker Controller 
 Route::get('require/all', "RequireTakerController@requireTakerViewingSite");
 
@@ -62,6 +68,8 @@ Route::get('require/add/{requesterID}', "RequireTakerController@requireTakerAddi
 Route::get('require/delete/{requesterID}', "RequireTakerController@requireTakerDeleting");
 
 Route::get('require/finish', "RequireTakerController@requireTakerConfirmFinish");
+
+
 
 
 

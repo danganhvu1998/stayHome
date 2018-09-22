@@ -79,17 +79,16 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    SHF - Stay Home Forever
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="">How To Use (English)</a>
+                    <a href="">使い方 (日本語 - 翻訳の人を探しています)</a>
+                    <a href="">Author (Lazy - Not Write Yet)</a>
                 </div>
+                <p>A service helps you to buy stuffs without moving your ass away!</p>
+                <p>Finding Translator [From English or Vietnamese to Japanese]. Contact <strong>danganhvu1998@gmail.com</strong> if you want to help</p>
             </div>
         </div>
     </body>

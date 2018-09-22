@@ -34,7 +34,8 @@
                     <!-- Left Side Of Navbar -->
                     
                     <ul class="navbar-nav mr-auto">
-                        <li><a href="/user_require/confirm">BUYING</a></li>
+                        <li><a class="nav-link" href="/user_require/confirm"><b>My Stuffs</b></a></li>
+                        <li><a class="nav-link" href="/require/all"><b>Let's Go Out</b></a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -50,7 +51,7 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                    {{ Auth::user()->name }} ({{ Auth::user()->point }} point) <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
