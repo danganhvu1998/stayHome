@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    SHF - Stay Home Forever
+                    <a href="/home">SHF - Stay Home Forever</a>
                 </div>
 
                 <div class="links">
