@@ -87,7 +87,7 @@
                     <a href="/docs/jap">使い方 (日本語 - 翻訳の人を探しています)</a>
                     <a href="">Author (Lazy - Not Write Yet)</a>
                 </div>
-                <p>A service helps you to buy stuffs without moving your ass!</p>
+                <p>A service helps you buy stuffs without moving your ass!</p>
                 <p>Finding Translator [From English or Vietnamese to Japanese]. Contact <strong>danganhvu1998@gmail.com</strong> if you want to help</p>
             </div>
         </div>
