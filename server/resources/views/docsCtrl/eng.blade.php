@@ -13,5 +13,5 @@
     <p>One point will help you to buy one stuff. 10 points 10 stuffs.</p>
     <p><b class="text-danger">We just connect people, WE WILL TAKE NO RESPONSE ABOUT MONEY</b></p>
     <p>More features is in developing</p>
-    <p>And finally, <strong class="text-danger">DO NOT CHEAT, PLAY FAIR</strong></p>
+    <p>And finally, <strong class="text-danger">PLAY FAIR</strong></p>
 @endsection
