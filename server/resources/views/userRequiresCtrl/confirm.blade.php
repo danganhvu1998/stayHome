@@ -48,30 +48,27 @@
                 <div class="card-header text-center">
                     {{$confirmedUserRequire->name}}
                 </div>
-                <div class="card-body row">
-                    <div class="col-md-5">
-                        <img src="/storage/file/{{$confirmedUserRequire->image}}" alt="{{$confirmedUserRequire->image}}" width="125" height="125">
-                    </div>
-                    <div class="col-md-7">
-                        Price: {{$confirmedUserRequire->price}}¥ +-10% <hr>
-                        Amount: <strong class="text-danger">{{$confirmedUserRequire->amount}}</strong><br>
-                        Note: <strong class="text-success">{{$confirmedUserRequire->note}}</strong>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="/storage/file/{{$confirmedUserRequire->image}}" alt="{{$confirmedUserRequire->image}}" width="125" height="125">
+                        </div>
+                        <div class="col-md-7">
+                            Price: {{$confirmedUserRequire->price}}¥ +-10% <hr>
+                            Amount: <strong class="text-danger">{{$confirmedUserRequire->amount}}</strong><br>
+                            Note: <strong class="text-success">{{$confirmedUserRequire->note}}</strong>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="card-footer row">
-                    <div class="col-md-9">
-                        Status: {{$confirmedUserRequire->status}}
-                        @if ($confirmedUserRequire->status==1)
-                            Pending
-                        @elseif($confirmedUserRequire->status==2)
-                            Buying
-                        @else
-                            Time to take it home!
-                        @endif
-                    </div>
-                    <div class="btn-group col-md-3">
-                        <a href="/user_require/delete/{{$confirmedUserRequire->id}}" class="btn btn-sm btn-danger">Remove</a>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-md-9">
+                            Someone will pick it up soon!
+                        </div>
+                        <div class="btn-group col-md-3">
+                            <a href="/user_require/delete/{{$confirmedUserRequire->id}}" class="btn btn-sm btn-danger">Remove</a>
+                        </div>
                     </div>
                 </div>
             </div>
