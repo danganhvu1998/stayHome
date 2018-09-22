@@ -83,11 +83,11 @@
                 </div>
 
                 <div class="links">
-                    <a href="">How To Use (English)</a>
-                    <a href="">使い方 (日本語 - 翻訳の人を探しています)</a>
+                    <a href="/docs/eng">How To Use (English)</a>
+                    <a href="/docs/jap">使い方 (日本語 - 翻訳の人を探しています)</a>
                     <a href="">Author (Lazy - Not Write Yet)</a>
                 </div>
-                <p>A service helps you to buy stuffs without moving your ass away!</p>
+                <p>A service helps you to buy stuffs without moving your ass!</p>
                 <p>Finding Translator [From English or Vietnamese to Japanese]. Contact <strong>danganhvu1998@gmail.com</strong> if you want to help</p>
             </div>
         </div>

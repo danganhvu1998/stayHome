@@ -69,6 +69,10 @@ Route::get('require/delete/{requesterID}', "RequireTakerController@requireTakerD
 
 Route::get('require/finish', "RequireTakerController@requireTakerConfirmFinish");
 
+// Document Controller
+Route::get('docs/eng', "DocumentsController@englishDocs");
+
+Route::get('docs/jap', "DocumentsController@japaneseDocs");
 
 
 
