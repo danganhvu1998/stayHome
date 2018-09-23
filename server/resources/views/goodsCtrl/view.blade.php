@@ -18,7 +18,7 @@
                         <img src="/storage/file/{{$goods->image}}" alt="{{$goods->image}}" width="125" height="125">
                     </div>
                     <div class="col-md-7">
-                        Price: {{$goods->price}}¥ +-10% <hr>
+                        Approximate price: {{$goods->price}}¥ + Tax <hr>
                         <strong>{{$marketsList[$goods->market_id]}}</strong>
                     </div>
                 </div>
