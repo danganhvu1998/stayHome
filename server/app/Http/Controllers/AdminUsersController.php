@@ -22,7 +22,7 @@ class AdminUsersController extends Controller
     public function allUsersSite(){
         User::whereNull("image")
             ->update([
-                    "image" => "cover_default.png"
+                    "image" => "cover_1537747794_default.png"
             ]);
         $users = User::all();
         return view("adminUserCtrl.view")->with("users", $users);
