@@ -130,12 +130,34 @@
                 @endif
                 @yield('content')
                 <hr>
-                <div class="">
-                    <ul>
-                        <li>Testing time will end at <b class="text-primary">23:59 31/October/2018</b>. You always can check our running campaign <b><a href="/home">HERE</a></b></li>
-                        <li><b class="text-danger">This is 100% free service that connect Buyer and Go-To-Market-er. Price is only approximate. Final price is on the bill, Buyer and Taker will decide how much money to pay</b></li>
-                        <li>Trouble with login? Sorry reset password will not work. Email me: <b>danganhvu1998@gmail.com</b></li>
-                    </ul>
+                <div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <ul>
+                                <li>Testing time will end at <b class="text-primary">23:59 31/October/2018</b>. You always can check our running campaign <b><a href="/home">HERE</a></b></li>
+                                <li><b class="text-danger">This is 100% free service that connect Buyer and Go-To-Market-er. Price is only approximate. Final price is on the bill, Buyer and Taker will decide how much money to pay</b></li>
+                                <li>Trouble with login? Sorry reset password will not work. Email me: <b>danganhvu1998@gmail.com</b></li>
+                                <li>Like us? Donate Now  ===> </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_s-xclick">
+                                <input type="hidden" name="hosted_button_id" value="95VX9JHHCMSWS">
+                                <input type="hidden" name="on0" value="Buy me a cup of coffee!">Buy me a cup of coffee!
+                                <br>
+                                <select name="os0">
+                                    <option value="A small cup of coffee">A small cup of coffee ¥100 JPY</option>
+                                    <option value="Big coffee cup">Big coffee cup ¥400 JPY</option>
+                                    <option value="A bottle of coffee">A bottle of coffee ¥1,000 JPY</option>
+                                    <option value="A tank of coffee">A tank of coffee ¥10,000 JPY</option>
+                                </select><br><br>
+                                <input type="hidden" name="currency_code" value="JPY">
+                                <input type="image" src="https://www.paypalobjects.com/en_US/JP/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
