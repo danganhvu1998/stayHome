@@ -36,6 +36,7 @@
                     <ul class="navbar-nav mr-auto">
                         <li><a class="nav-link" href="/user_require/confirm"><b>My Stuffs</b></a></li>
                         <li><a class="nav-link" href="/require/all"><b>Let's Go Out</b></a></li>
+                        <li><a class="nav-link" href="/user_require/finish/history"><b>History</b></a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -63,6 +64,9 @@
                                     </div>
                                 </li>
                         @else
+                            @if (Auth::user()->id == 1)
+                                <li><a class="nav-link" href="/admin/building"><b>Admin</b></a></li>
+                            @endif
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} ({{ Auth::user()->point }} point) <span class="caret"></span>
@@ -122,6 +126,7 @@
                 <hr>
                 <div class="">
                     <ul>
+                        <li>Testing time will end at <b class="text-primary">23:59 31/October/2018</b>. Before that, you have infinity point. Feel free to use! In testing time, guarantee that every order before 11h30AM every Saturday and Sunday will be deliverd before 12h30PM.</li>
                         <li><b class="text-danger">This is 100% free service that connect Buyer and Go-To-Market-er. Price is only approximate. Final price is on the bill, Buyer and Taker will decide how much money to pay</b></li>
                         <li>Trouble with login? Sorry reset password will not work. Email me: <b>danganhvu1998@gmail.com</b></li>
                     </ul>

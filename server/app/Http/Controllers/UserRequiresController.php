@@ -145,8 +145,31 @@ class userRequiresController extends Controller
         return redirect("/user_require/confirm");
     }
 
+    public function requiresConfirmFinishedHistory(){
+        $userFinishedSingleRequires = singleRequire::where("userID", Auth::user()->id)
+            ->orderBy("single_requires.id", "desc")
+            ->where("status", ">", 3)
+            ->join("goods", "single_requires.goodsID", "=", "goods.id")
+            ->join("users", "single_requires.takerID", "=", "users.id")
+            ->select("goods.*", "single_requires.*", "users.name as user_name", "users.image as user_image", "users.room_number")
+            ->limit(12)
+            ->get();
+
+        $usersFinishedTakenRequires = singleRequire::where("takerID", Auth::user()->id)
+            ->orderBy("single_requires.id", "desc")
+            ->where("status", ">", 3)
+            ->join("goods", "single_requires.goodsID", "=", "goods.id")
+            ->join("users", "single_requires.userID", "=", "users.id")
+            ->select("goods.*", "single_requires.*", "users.name as user_name", "users.image as user_image", "users.room_number")
+            ->limit(12)
+            ->get();
+        $data = array("userFinishedSingleRequires" => $userFinishedSingleRequires, "usersFinishedTakenRequires" => $usersFinishedTakenRequires);
+        return view("userRequiresCtrl.history")->with($data);
+    }
+
     public function currentUsingPoint(){
         $currentBuyingGoods = singleRequire::where("userID", Auth::user()->id)
+            ->orderBy("single_requires.id", "desc")
             ->where("status", "<", 4)
             ->where("status", ">", 0)
             ->select("amount")

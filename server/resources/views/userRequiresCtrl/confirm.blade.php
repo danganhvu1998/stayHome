@@ -21,7 +21,7 @@
                         <img src="/storage/file/{{$userRequire->image}}" alt="{{$userRequire->image}}" width="125" height="125">
                     </div>
                     <div class="col-md-7">
-                        Price: {{$userRequire->price}}¥ +-10% <hr>
+                        Price: {{$userRequire->price}}¥ + tax <hr>
                         Amount: <strong class="text-danger">{{$userRequire->amount}}</strong><br>
                         Note: <strong class="text-success">{{$userRequire->note}}</strong>
                     </div>
@@ -54,7 +54,7 @@
                             <img src="/storage/file/{{$confirmedUserRequire->image}}" alt="{{$confirmedUserRequire->image}}" width="125" height="125">
                         </div>
                         <div class="col-md-7">
-                            Price: {{$confirmedUserRequire->price}}¥ +-10% <hr>
+                            Price: {{$confirmedUserRequire->price}}¥ + tax <hr>
                             Amount: <strong class="text-danger">{{$confirmedUserRequire->amount}}</strong><br>
                             Note: <strong class="text-success">{{$confirmedUserRequire->note}}</strong>
                         </div>
@@ -87,7 +87,7 @@
                         <img src="/storage/file/{{$require->image}}" alt="{{$require->image}}" width="100" height="100">
                     </div>
                     <div class="col-md-3 text-center">
-                        Price: <strong>{{$require->price}}¥ </strong>+-10%<br>
+                        Price: <strong>{{$require->price}}¥ </strong>+ tax<br>
                         Amount: <strong class="text-danger">{{$require->amount}}</strong><br>
                         Note: <strong class="text-success">{{$require->note}}</strong>
                     </div>
@@ -125,7 +125,7 @@
                         <img src="/storage/file/{{$require->image}}" alt="{{$require->image}}" width="100" height="100">
                     </div>
                     <div class="col-md-3 text-center">
-                        Price: <strong>{{$require->price}}¥ </strong>+-10%<br>
+                        Price: <strong>{{$require->price}}¥ </strong>+ tax<br>
                         Amount: <strong class="text-danger">{{$require->amount}}</strong><br>
                         Note: <strong class="text-success">{{$require->note}}</strong>
                     </div>

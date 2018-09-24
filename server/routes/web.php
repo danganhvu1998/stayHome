@@ -60,6 +60,8 @@ Route::get('user_require/finish/success/{singleRequireID}', 'UserRequiresControl
 
 Route::get('user_require/finish/failt/{singleRequireID}', 'UserRequiresController@requiresConfirmFinishedFailt');
 
+Route::get('user_require/finish/history', 'UserRequiresController@requiresConfirmFinishedHistory');
+
 // Require Taker Controller 
 Route::get('require/all', "RequireTakerController@requireTakerViewingSite");
 
