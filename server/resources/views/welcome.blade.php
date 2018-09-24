@@ -9,6 +9,17 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
+         <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> 
 
         <!-- Styles -->
         <style>
@@ -49,7 +60,7 @@
                 font-size: 84px;
             }
 
-            .links > a {
+            .links {
                 color: #636b6f;
                 padding: 0 25px;
                 font-size: 12px;
@@ -77,19 +88,46 @@
                 </div>
             @endif
 
-            <div class="content">
+            <section class="content" id="opening">
                 <div class="title m-b-md">
                     <a href="/home">SHF - Stay Home Forever</a>
                 </div>
 
-                <div class="links">
-                    <a href="/docs/eng">How To Use (English)</a>
-                    <a href="/docs/jap">使い方 (日本語 - 翻訳の人を探しています)</a>
-                    <a href="">Author (Lazy - Not Write Yet)</a>
+                <div>
+                    <div class="row text-center">
+                        <div class="col-md-3"><a href="/docs/eng" style="color: #636b6f; font-weight: 600;">How To Use</a></div>
+                        <div class="col-md-3"><a href="/docs/jap" style="color: #636b6f; font-weight: 600;">使い方</a></div>
+                        <div class="col-md-3"><a href="#campaign" style="color: #636b6f; font-weight: 600;">CAMPAIGN</a></div>
+                        <div class="col-md-3"><a href="#news" style="color: #636b6f; font-weight: 600;">NEWS</a></div>
+                    </div>
                 </div>
                 <p>A service helps you buy stuffs without moving your ass!</p>
                 <p>Finding Translator [From English or Vietnamese to Japanese]. Contact <strong>danganhvu1998@gmail.com</strong> if you want to help</p>
-            </div>
+            </section>
         </div>
+        <section class="content" id="campaign">
+            <h2><b><a href="/home">CAMPAIGN</a></b></h2>
+            <p>
+                <b style="color: #636b6f; font-weight: 600;">
+                    25-Sep-2018 -> 31-Oct-2018 「Dormy Kawaguchi」:
+                </b> 
+                Guarantee every order before 11h30AM every Saturday and Sunday will be deliverd before 12h30PM.
+            </p>
+            <p>
+                <b style="color: #636b6f; font-weight: 600;">
+                    25-Sep-2018 -> 31-Oct-2018 「Dormy Kawaguchi」:
+                </b> 
+                Randomly discount 50% (up to 150¥) for 3 orders every week
+            </p>
+        </section><br><br><br>
+        <section class="content" id="news">
+            <h2><b><a href="/home">New</a></b></h2>
+            <p>
+                <b style="color: #636b6f; font-weight: 600;">
+                        24-Sep-2018:
+                </b> 
+                Add 「Kitazono women's dormitory」 and 「Toyo University - International House (IH)」 MORE FRIENDS MORE FUN!
+            </p>
+        </section>
     </body>
 </html>
