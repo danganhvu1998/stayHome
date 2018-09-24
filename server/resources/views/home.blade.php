@@ -28,6 +28,7 @@
         <li>If you find any bugs, or any ideas to improve SHF, please fell free to inform me at <b class="text-danger">danganhvu1998@gmail.com</b>. Thank you!(Of course, extra point!)</li>
         <li>It is recommend that your avata picture contains your front door</li>
         <li>Trouble? Please read: <a href="/docs/eng">English</a> or <a href="/docs/jap">日本語(not yet)</a></li>
+        <li class="text-center"><iframe src="https://giphy.com/embed/XhHeQfSQXOtkk" width="250" height="250" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></li>
     </ul>
 </div>
 @endsection
