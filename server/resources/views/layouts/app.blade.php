@@ -55,6 +55,9 @@
                                     </a>
     
                                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="/home">
+                                            CAMPAIGN
+                                        </a>
                                         <a class="dropdown-item" href="/docs/eng">
                                             English
                                         </a>
@@ -96,6 +99,9 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="/home">
+                                        CAMPAIGN
+                                    </a>
                                     <a class="dropdown-item" href="/docs/eng">
                                         English
                                     </a>
@@ -126,7 +132,7 @@
                 <hr>
                 <div class="">
                     <ul>
-                        <li>Testing time will end at <b class="text-primary">23:59 31/October/2018</b>. Before that, you have infinity point. Feel free to use! In testing time, guarantee that every order before 11h30AM every Saturday and Sunday will be deliverd before 12h30PM.</li>
+                        <li>Testing time will end at <b class="text-primary">23:59 31/October/2018</b>. You always can check our running campaign <b><a href="/home">HERE</a></b></li>
                         <li><b class="text-danger">This is 100% free service that connect Buyer and Go-To-Market-er. Price is only approximate. Final price is on the bill, Buyer and Taker will decide how much money to pay</b></li>
                         <li>Trouble with login? Sorry reset password will not work. Email me: <b>danganhvu1998@gmail.com</b></li>
                     </ul>
