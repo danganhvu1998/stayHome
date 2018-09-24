@@ -110,3 +110,10 @@ Route::get('/admin/market/edit/{marketID}', 'AdminMarketsController@editMarketSi
 Route::post('/admin/market/edit', 'AdminMarketsController@editMarket');
 
 Route::get('/admin/market/delete/{marketID}', 'AdminMarketsController@deleteMarket');
+
+// User Controller
+Route::get('/admin/user', 'AdminUsersController@allUsersSite');
+
+Route::get('/admin/user/reset_password/{userID}', 'AdminUsersController@resetUserPassword');
+
+Route::get('/admin/user/ban/{userID}', 'AdminUsersController@banUser');
