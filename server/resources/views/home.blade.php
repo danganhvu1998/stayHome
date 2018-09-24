@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">SHF History</div>
+                <div class="card-header">SHF CAMPAIGN</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -15,7 +15,7 @@
                     @endif
 
                     <ul>
-                        <li>22-Sep-2018: Open testing</li>
+                        <li>25-Sep-2018 -> 31-Oct-2018 「Dormy Kawaguchi」: Randomly discount 50% (up to 150¥) for 3 orders every week </li>
                     </ul>
                 </div>
             </div>
