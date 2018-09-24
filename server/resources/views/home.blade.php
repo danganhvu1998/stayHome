@@ -15,6 +15,7 @@
                     @endif
 
                     <ul>
+                        <li><b>25-Sep-2018 -> 31-Oct-2018 「Dormy Kawaguchi」:</b> Guarantee every order before 11h30AM every Saturday and Sunday will be deliverd before 12h30PM. </li>
                         <li><b>25-Sep-2018 -> 31-Oct-2018 「Dormy Kawaguchi」:</b> Randomly discount 50% (up to 150¥) for 3 orders every week </li>
                         <li><b>25-Sep-2018 -> 31-Oct-2018:</b> Infinity points for everyone!</li>
                     </ul>
