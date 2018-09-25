@@ -222,9 +222,9 @@ class userRequiresController extends Controller
             //Confirm success
             $this->userAddingPoint($request->amount, $request->userID);
         }
-        singleRequire::where("status", 3)
-            ->where('updated_at', '<', Carbon::now()->subMinutes(1440)->toDateTimeString())
-            ->update(["status" => 0]);
+        singleRequire::where("status", 1)
+            ->where('created_at', '<', Carbon::now()->subMinutes(2880)->toDateTimeString())
+            ->delete();
     }
     
     public function userAddingPoint($addPoint, $userID = 0){
