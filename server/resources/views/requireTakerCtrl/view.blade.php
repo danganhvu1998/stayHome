@@ -4,11 +4,13 @@
     <div class="row">
         <div class="col-md-10">
             <h3>Your Taken Request</h3>
+            <span>You have only 1 hours to finished taken request. Be fast!</span>
         </div>
         <div class="col-md-2 text-center">
             <a href="/require/finish" class="btn btn-lg btn-success">Finished</a>
         </div>
-    </div><br>
+    </div>
+    <br>
     @foreach ($requesters as $requester)
         @if (isset($usersTakenRequests[$requester->id]))
             <div class="card">
@@ -50,8 +52,8 @@
                     </ul>
                 </div>
             </div>
-            @endif
-        <br>
+            <br>
+        @endif
     @endforeach
     <hr>
 
@@ -97,7 +99,7 @@
                     </ul>
                 </div>
             </div>
+            <br>
         @endif
-        <br>
     @endforeach
 @endsection

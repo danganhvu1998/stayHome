@@ -17,7 +17,12 @@
     <p>More features is in developing</p>
     <p>And finally, <strong class="text-danger">PLAY FAIR</strong></p>
     <h3>Some simple rule</h3>
-    <p>An order remains untaken for two day will be deleted. An order has been taken for 1 hours but not yet finished will be come untaken order and anyone can retake it. An order that Taker confirms finished, but Buyer not confirm it will be consider as SUCCESSED-ORDER</p>
+    <ul>
+        <li>An order remains untaken for two day will be deleted</li>
+        <li>An order has been taken for 1 hours but not yet finished will become untaken order and anyone can retake it</li>
+        <li>An order has been confirmed finished by Go-to-market-er, but remain no response from Request-maker for 2 days will be considered as <b class="text-success">SUCCESS</b></li>
+    </ul>
+
 
     <hr>
     <ul> From Admin : 

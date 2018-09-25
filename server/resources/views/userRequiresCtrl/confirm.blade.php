@@ -104,8 +104,8 @@
     </div><hr>
 
     <h3>Your stuffs is home!</h3>
-    <span>When you see your orders here, you can come to deliver's room and take it! </span>
-    <span class="text-danger">Important: Once you confirmed, it cannot be redone. <strong>PLEASE PLAY FAIR!</strong></span><br>
+    <span>When you see your orders here, you can come to deliver's room and take it! And you only have 2 days to response whether order was finished or not. </span>
+    <span class="text-danger">Important: Once you confirmed, it cannot be redone. <strong>Remember to play fair.</strong></span><br>
     <div>
         @foreach ($finishedUserRequires as $require)
             <div class="card bg-light">
