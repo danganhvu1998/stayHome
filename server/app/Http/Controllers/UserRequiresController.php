@@ -216,7 +216,7 @@ class userRequiresController extends Controller
         
         // Confirmed but no one take after 2 day
         $timeoutConfirmedRequests = singleRequire::where("status", 1)
-            ->where('updated_at', '<', Carbon::now()->subMinutes(2880)->toDateTimeString())
+            ->where('created_at', '<', Carbon::now()->subMinutes(2880)->toDateTimeString())
             ->get();
         foreach($timeoutConfirmedRequests as $request){
             //Confirm success
