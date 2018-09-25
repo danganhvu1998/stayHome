@@ -76,6 +76,8 @@ Route::get('docs/eng', "DocumentsController@englishDocs");
 
 Route::get('docs/jap', "DocumentsController@japaneseDocs");
 
+// Testing site
+#Route::get('testing', "RequireTakerController@timeOutTakenRequest");
 
 
 

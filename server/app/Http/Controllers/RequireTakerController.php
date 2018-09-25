@@ -4,11 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Carbon\Carbon;
 
 use App\User;
 use App\goods;
 use App\singleRequire;
 use App\assignRequireUser;
+
+use App\Http\Controllers\userRequiresController;
 
 class RequireTakerController extends Controller
 {
@@ -21,6 +24,7 @@ class RequireTakerController extends Controller
         if(!isset(Auth::user()->building_id)){
             return redirect("/user/setting");
         }
+        $this->timeOutTakenRequest();
         $requesters = User::where("building_id", Auth::user()->building_id)->get();
         
         // All Free Request
@@ -95,4 +99,13 @@ class RequireTakerController extends Controller
             ->select("goods.*", "single_requires.*")
             ->get();
     }
+
+    public function timeOutTakenRequest(){
+        // Taken request but not finished after 1 hour
+        singleRequire::where("status", 2)
+            ->where('updated_at', '<', Carbon::now()->subMinutes(60)->toDateTimeString())
+            ->update(["status" => 1]);
+    }
+
+    
 }

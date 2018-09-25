@@ -31,6 +31,8 @@ class userRequiresController extends Controller
 
     public function userRequireConfirmSite(){
         $this->pointInfoTaker();
+        $this->timeOutRequest();
+        #RequireTakerController::timeOutTakenRequest(2, 60, 1);
         $userRequires = singleRequire::where("userID", Auth::user()->id)
             ->where("status", 0)
             ->join("goods", "single_requires.goodsID", "=", "goods.id")
@@ -193,9 +195,41 @@ class userRequiresController extends Controller
         return $usingPoint;
     }
 
+    public function timeOutRequest(){
+        // Taken request but not finished after 1 hour
+        singleRequire::where("status", 2)
+            ->where('updated_at', '<', Carbon::now()->subMinutes(60)->toDateTimeString())
+            ->update(["status" => 1]);
+
+        // Finished request but not confirm after 1 day
+        $timeoutFinishedRequests = singleRequire::where("status", 3)
+            ->where('updated_at', '<', Carbon::now()->subMinutes(1440)->toDateTimeString())
+            ->get;
+        foreach($timeoutFinishedRequests as $request){
+            //Confirm success
+            $this->userAddingPoint($request->amount, $request->takerID);
+        }
+        singleRequire::where("status", 3)
+            ->where('updated_at', '<', Carbon::now()->subMinutes(1440)->toDateTimeString())
+            ->update(["status" => 4]);
+        
+        // Confirmed but no one take after 2 day
+        $timeoutConfirmedRequests = singleRequire::where("status", 1)
+            ->where('updated_at', '<', Carbon::now()->subMinutes(2880)->toDateTimeString())
+            ->get;
+        foreach($timeoutConfirmedRequests as $request){
+            //Confirm success
+            $this->userAddingPoint($request->amount, $request->userID);
+        }
+        singleRequire::where("status", 3)
+            ->where('updated_at', '<', Carbon::now()->subMinutes(1440)->toDateTimeString())
+            ->update(["status" => 0]);
+    }
+    
     public function userAddingPoint($addPoint, $userID = 0){
         if($userID == 0) $userID = Auth::user()->id;
+        $userPoint = User::where("id", $userID)->first()->point;
         User::where("id", $userID)
-            ->update(["point" => Auth::user()->point+$addPoint]);
+            ->update(["point" => $userPoint+$addPoint]);
     }
 }
