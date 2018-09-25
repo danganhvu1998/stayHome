@@ -16,6 +16,8 @@
     <p><b class="text-danger">We just connect people, WE WILL TAKE NO RESPONSE ABOUT MONEY</b></p>
     <p>More features is in developing</p>
     <p>And finally, <strong class="text-danger">PLAY FAIR</strong></p>
+    <h3>Some simple rule</h3>
+    <p>An order remains untaken for two day will be deleted. An order has been taken for 1 hours but not yet finished will be come untaken order and anyone can retake it. An order that Taker confirms finished, but Buyer not confirm it will be consider as SUCCESSED-ORDER</p>
 
     <hr>
     <ul> From Admin : 
