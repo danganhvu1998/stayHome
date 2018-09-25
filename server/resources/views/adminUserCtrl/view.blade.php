@@ -10,7 +10,8 @@
                 </div>
                 <div class="col-md-3">
                     <strong>{{$user->name}}</strong><br>
-                    {{$user->room_number}} ___ {{$user->building_id}}
+                    {{$user->room_number}} ___ {{$user->building_id}}<br>
+                    POINT: <strong>{{$user->point}}</strong>
                 </div>
                 <div class="col-md-1">
                     <a href="/admin/user/reset_password/{{$user->id}}" class="btn btn-block btn-warning">Reset</a><br>
