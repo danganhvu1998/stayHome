@@ -44,6 +44,9 @@ class UsersController extends Controller
     }
 
     public function userSettingNameChange(request $request){
+        $request->validate([
+            'user_name' => 'required|min:3',
+        ]);
         $userID = Auth::user()->id;
         User::where("id", $userID)
             ->update([
@@ -53,6 +56,9 @@ class UsersController extends Controller
     }
 
     public function userSettingPasswordChange(request $request){
+        $request->validate([
+            'user_password' => 'required|min:6',
+        ]);
         $userID = Auth::user()->id;
         User::where("id", $userID)
             ->update([
@@ -62,6 +68,9 @@ class UsersController extends Controller
     }
 
     public function userSettingImageChange(request $request){
+        $request->validate([
+            'file' => 'required|image',
+        ]);
         $userID = Auth::user()->id;
         //Delete Cover Image
         $file = user::where('id', $userID)->first();
@@ -90,6 +99,10 @@ class UsersController extends Controller
     }
 
     public function userSettingAddressChange(request $request){
+        $request->validate([
+            'room_number' => 'required|max:10|min:1',
+            'buildingID' => 'required'
+        ]);
         $userID = Auth::user()->id;
         User::where("id", $userID)
             ->update([
