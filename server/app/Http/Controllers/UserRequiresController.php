@@ -205,7 +205,7 @@ class userRequiresController extends Controller
         // Finished request but not confirm after 1 day
         $timeoutFinishedRequests = singleRequire::where("status", 3)
             ->where('updated_at', '<', Carbon::now()->subMinutes(1440)->toDateTimeString())
-            ->get;
+            ->get();
         foreach($timeoutFinishedRequests as $request){
             //Confirm success
             $this->userAddingPoint($request->amount, $request->takerID);
@@ -217,7 +217,7 @@ class userRequiresController extends Controller
         // Confirmed but no one take after 2 day
         $timeoutConfirmedRequests = singleRequire::where("status", 1)
             ->where('updated_at', '<', Carbon::now()->subMinutes(2880)->toDateTimeString())
-            ->get;
+            ->get();
         foreach($timeoutConfirmedRequests as $request){
             //Confirm success
             $this->userAddingPoint($request->amount, $request->userID);
