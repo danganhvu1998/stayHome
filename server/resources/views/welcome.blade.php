@@ -143,6 +143,12 @@
             <h2><b><a href="/home">NEW</a></b></h2>
             <p>
                 <b style="color: #636b6f; font-weight: 600;">
+                        25-Sep-2018:
+                </b> 
+                Upgraded to HTTPS! Haura! Now you can login/register with confident!
+            </p>
+            <p>
+                <b style="color: #636b6f; font-weight: 600;">
                         24-Sep-2018:
                 </b> 
                 Add 「Kitazono women's dormitory」 and 「Toyo University - International House (IH)」 MORE FRIENDS MORE FUN!
